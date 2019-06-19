@@ -1,0 +1,28 @@
+<h1>Calculator</h1>
+
+<div class="input-group mb-3">
+  <input
+    type="text"
+    class="form-control"
+    placeholder="first number"
+    [(ngModel)]="firstNumber"
+    name="firstNumber"
+  />
+  <input
+    type="text"
+    class="form-control"
+    placeholder="second number"
+    [(ngModel)]="secondNumber"
+    name="secondNumber"
+  />
+  <div class="input-group-prepend" id="button-addon3">
+    <button (click)="addToDatabase()" class="btn btn-outline-secondary" type="button">
+      Send numbers
+    </button>
+    
+    <button (click)="getFromDatabase(1)" class="btn btn-outline-secondary" type="button">
+      Get numbers
+    </button>
+  </div>
+</div>
+
